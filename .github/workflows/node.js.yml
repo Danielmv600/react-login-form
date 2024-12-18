@@ -49,10 +49,10 @@ jobs:
       # Step 7: Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/react-app:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/danio-app:latest .
 
       # Step 8: Push Docker image to Docker Hub
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/react-app:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/danio-app:latest
 
